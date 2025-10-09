@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       price: 5000, 
       stock: 10, 
       rating: 4.5, 
-      image: 'assets/gula-pasir.jpg',
+      image: 'assets/gula.jpeg',
       description: 'High-quality sugar perfect for baking and sweetening your favorite dishes.'),
     Item(
       name: 'Salt', 
