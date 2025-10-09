@@ -4,27 +4,30 @@ import 'package:belanja/widgets/listSection.dart';
 
 class HomePage extends StatelessWidget {
   final List<Item> items = [
-     Item(
-      name: 'Sugar', 
-      price: 5000, 
-      stock: 10, 
-      rating: 4.5, 
-      image: 'assets/gula.jpeg',
-      description: 'High-quality sugar perfect for baking and sweetening your favorite dishes.'),
     Item(
-      name: 'Salt', 
-      price: 2000, 
-      stock: 15, 
-      rating: 4.0, 
+      name: 'Sugar',
+      price: 5000,
+      stock: 10,
+      rating: 4.5,
+      image: 'assets/gula.jpeg',
+      description:
+          'High-quality sugar perfect for baking and sweetening your favorite dishes.',
+    ),
+    Item(
+      name: 'Salt',
+      price: 2000,
+      stock: 15,
+      rating: 4.0,
       image: 'assets/garam.jpg',
-      description: 'Pure and natural salt to enhance the flavor of your meals.'),
+      description: 'Pure and natural salt to enhance the flavor of your meals.',
+    ),
   ];
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-         title: const Text('Daftar Barang'),
+        title: const Text('Daftar Barang'),
         backgroundColor: Colors.blue[600],
         foregroundColor: Colors.white,
       ),
@@ -50,11 +53,11 @@ class HomePage extends StatelessWidget {
       bottomNavigationBar: Container(
         padding: const EdgeInsets.all(16),
         child: const Text(
-          'Aldo Khrisna Wijaya - 2341760091',
+          'Queenadhynar Azarine D.A - 2341760109',
           style: TextStyle(color: Colors.blueGrey),
           textAlign: TextAlign.center,
         ),
-      )
+      ),
     );
   }
 }

@@ -20,6 +20,8 @@ class ItemCard extends StatelessWidget {
         children: [
           Expanded(
             flex: 3,
+            child: Hero(
+              tag: 'hero-${item.name}', // Tag unik untuk setiap item
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -30,6 +32,7 @@ class ItemCard extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
           ),
           
           const SizedBox(height: 6),

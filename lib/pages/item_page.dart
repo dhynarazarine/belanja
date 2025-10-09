@@ -14,14 +14,17 @@ class ItemPage extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Gambar
-          Container(
-            height: 200,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              image: DecorationImage(
-                image: AssetImage(itemArgs.image),
-                fit: BoxFit.cover,
+          // Gambar dengan Hero Widget
+          Hero(
+            tag: 'hero-${itemArgs.name}', // Tag yang sama dengan di HomePage
+            child: Container(
+              height: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                image: DecorationImage(
+                  image: AssetImage(itemArgs.image),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
@@ -108,7 +111,7 @@ class ItemPage extends StatelessWidget {
       bottomNavigationBar: Container(
         padding: const EdgeInsets.all(16),
         child: const Text(
-          'Aldo Khrisna Wijaya - 2341760091',
+          'Queenadhynar Azarine D.A - 2341760109',
           style: TextStyle(color: Colors.blueGrey),
           textAlign: TextAlign.center,
         ),
